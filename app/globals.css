@@ -6,11 +6,21 @@
 @custom-variant dark (&:is(.dark *));
 
 @layer utilities {
+  /* Backgrounds */
+  .card-bg-1 {
+    @apply bg-[url('/card-bg-1.svg')] bg-no-repeat bg-right;
+  }
+
   /* Typography */
   .text-preset-1-mobile {
     @apply text-5xl font-bold;
     line-height: 120%;
     letter-spacing: -2px;
+  }
+
+  .text-preset-4 {
+    @apply text-2xl font-semibold;
+    line-height: 140%;
   }
 
   .text-preset-5 {
@@ -22,6 +32,12 @@
   .text-preset-6 {
     @apply text-lg font-medium;
     line-height: 120%;
+  }
+
+  .text-preset-7 {
+    @apply text-sm font-normal;
+    line-height: 140%;
+    letter-spacing: -0.3px;
   }
 }
 
@@ -65,6 +81,7 @@
   --radius-xl: calc(var(--radius) + 4px);
 
   /* DS Palette */
+  --color-blue-ds-100: #e0e6fa;
   --color-blue-ds-200: #c7d3f7;
   --color-blue-ds-600: var(--primary);
   --color-blue-ds-700: #2a4cd5;
