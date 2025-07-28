@@ -50,8 +50,8 @@ export default function TrendsChart() {
           <span className="text-preset-3-mobile text-neutral-ds-900">
             Mood and sleep trends
           </span>
-          <div className="flex justify-center">
-            <div className="grid grid-rows-[repeat(4,53px)_68px_42px] w-20">
+          <div className="flex gap-3 justify-center">
+            <div className="grid grid-rows-[repeat(4,53px)_68px_42px] w-28">
               <ChartLabel>9+ hours</ChartLabel>
               <ChartLabel>7-8 hours</ChartLabel>
               <ChartLabel>5-6 hours</ChartLabel>
