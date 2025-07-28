@@ -18,6 +18,13 @@
     letter-spacing: -2px;
   }
 
+  .text-preset-3-mobile {
+    @apply font-bold;
+    font-size: 28px;
+    line-height: 130%;
+    letter-spacing: -0.3px;
+  }
+
   .text-preset-4 {
     @apply text-2xl font-semibold;
     line-height: 140%;
@@ -38,6 +45,17 @@
     @apply text-sm font-normal;
     line-height: 140%;
     letter-spacing: -0.3px;
+  }
+
+  .text-preset-8 {
+    @apply font-semibold;
+    font-size: 13px;
+    line-height: 100%;
+  }
+
+  .text-preset-9 {
+    @apply text-xs font-normal;
+    line-height: 110%;
   }
 }
 
@@ -83,7 +101,7 @@
   /* DS Palette */
   --color-blue-ds-100: #e0e6fa;
   --color-blue-ds-200: #c7d3f7;
-  --color-blue-ds-600: var(--primary);
+  --color-blue-ds-600: #4865db;
   --color-blue-ds-700: #2a4cd5;
   --color-neutral-ds-600: #57577b;
   --color-neutral-ds-900: #21214d;
@@ -106,7 +124,7 @@
   --accent: oklch(0.967 0.001 286.375);
   --accent-foreground: oklch(0.21 0.006 285.885);
   --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.92 0.004 286.32);
+  --border: #e0e6fa;
   --input: oklch(0.92 0.004 286.32);
   --ring: oklch(0.705 0.015 286.067);
   --chart-1: oklch(0.646 0.222 41.116);
