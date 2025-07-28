@@ -101,10 +101,19 @@
   /* DS Palette */
   --color-blue-ds-100: #e0e6fa;
   --color-blue-ds-200: #c7d3f7;
+  --color-blue-ds-300: #89caff;
   --color-blue-ds-600: #4865db;
   --color-blue-ds-700: #2a4cd5;
+  --color-neutral-ds-0: #ffffff;
+  --color-neutral-ds-200: #cbcdd0;
+  --color-neutral-ds-300: #9393b7;
   --color-neutral-ds-600: #57577b;
   --color-neutral-ds-900: #21214d;
+  --color-red-ds-300: #ff9b99;
+  --color-red-ds-700: #e60013;
+  --color-indigo-ds-200: #b8b1ff;
+  --color-green-ds-300: #89e780;
+  --color-amber-ds-300: #ffc97c;
 }
 
 :root {

@@ -1,7 +1,7 @@
 import React, { useMemo } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import SleepIcon from "@/icons/SleepIcon";
-import { getCurrentWeekDates } from "@/lib/utils";
+import { getLastNDays } from "@/lib/utils";
 import { format } from "date-fns";
 import { Separator } from "@/components/ui/separator";
 
@@ -37,7 +37,7 @@ function ChartDayContent({ date }: ChartDayContentProps) {
 export default function TrendsChart() {
   const weekDates = useMemo(
     () =>
-      getCurrentWeekDates().map((date) => (
+      getLastNDays(11).map((date) => (
         <ChartDayContent key={`date-${date.toISOString()}`} date={date} />
       )),
     [],
@@ -51,14 +51,14 @@ export default function TrendsChart() {
             Mood and sleep trends
           </span>
           <div className="flex gap-3 justify-center">
-            <div className="grid grid-rows-[repeat(4,53px)_68px_42px] w-28">
+            <div className="grid grid-rows-[repeat(4,53px)_68px_42px] w-24">
               <ChartLabel>9+ hours</ChartLabel>
               <ChartLabel>7-8 hours</ChartLabel>
               <ChartLabel>5-6 hours</ChartLabel>
               <ChartLabel>3-4 hours</ChartLabel>
               <ChartLabel>0-2 hours</ChartLabel>
             </div>
-            <div className="flex overflow-x-auto pb-3">
+            <div className="flex overflow-x-auto pb-3 w-full">
               <div className="flex gap-3 min-w-max h-[307px] relative">
                 <Separator className="absolute m-0 top-[calc(53px*0)] left-0" />
                 <Separator className="absolute m-0 top-[calc(53px*1)] left-0" />
