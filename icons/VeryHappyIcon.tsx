@@ -8,6 +8,7 @@ export default function VeryHappyIcon({
 }: IconProps) {
   return (
     <svg
+      width={size + 2}
       height={size}
       viewBox="0 0 154 154"
       fill="none"

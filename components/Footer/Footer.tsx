@@ -7,7 +7,7 @@ export default function Footer() {
       <p>
         Made with 💙 by{" "}
         <a
-          href="https://x.com/juandadotdev"
+          href="https://juanda.dev"
           className="underline hover:text-blue-ds-600"
           target="_blank"
           rel="noopener noreferrer"
@@ -39,7 +39,7 @@ export default function Footer() {
         </a>
       </nav>
       <p className="text-xs text-neutral-ds-900/50">
-        v1.0.0 • Updated Jul 2025
+        @ {new Date().getFullYear()} Mood Tracker. All rights reserved.
       </p>
       <p className="text-xs italic">
         This app is not a substitute for professional health advice.
